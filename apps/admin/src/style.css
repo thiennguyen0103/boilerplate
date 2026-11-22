@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  color: #202b37;
+  background: #f6f8fa;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  min-height: 100vh;
+}
+
+aside {
+  padding: 28px;
+  background: white;
+  border-right: 1px solid #e5e9ed;
+}
+
+aside nav {
+  display: grid;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+aside a {
+  color: #667481;
+  text-decoration: none;
+}
+
+aside a.active {
+  color: #202b37;
+  font-weight: 600;
+}
+
+section {
+  padding: 56px;
+}
+
+small {
+  color: #68877e;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 40px;
+}

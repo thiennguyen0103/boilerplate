@@ -1,0 +1,25 @@
+{
+  "name": "fullstack-clean-boilerplate",
+  "private": true,
+  "packageManager": "pnpm@10.0.0",
+  "scripts": {
+    "dev": "pnpm --parallel --filter @acme/api --filter @acme/web --filter @acme/admin dev",
+    "build": "pnpm -r build",
+    "lint": "oxlint",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm -r test",
+    "test:e2e": "pnpm --filter @acme/api test:e2e",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
+    "db:generate": "pnpm --filter @acme/api migration:generate",
+    "db:create": "pnpm --filter @acme/api migration:create",
+    "db:run": "pnpm --filter @acme/api migration:run",
+    "db:revert": "pnpm --filter @acme/api migration:revert",
+    "db:show": "pnpm --filter @acme/api migration:show"
+  },
+  "devDependencies": {
+    "oxfmt": "^0.79.0",
+    "oxlint": "^1.0.0",
+    "typescript": "^5.7.0"
+  }
+}
